@@ -1,5 +1,5 @@
 use serde::Deserialize;
-use std::collections::BTreeMap;
+use crate::{BTreeMap, String};
 
 use crate::TestUnit;
 

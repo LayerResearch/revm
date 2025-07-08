@@ -6,6 +6,17 @@
 //! It includes structures for representing account information, environment settings,
 //! test cases, and transaction data used in Ethereum state tests.
 
+#![no_std]
+
+extern crate alloc;
+
+// Re-export commonly used alloc types
+pub use alloc::{
+    collections::BTreeMap,
+    string::String,
+    vec::Vec,
+};
+
 mod account_info;
 mod deserializer;
 mod env;

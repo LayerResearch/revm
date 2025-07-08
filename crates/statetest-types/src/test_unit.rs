@@ -1,5 +1,5 @@
 use serde::Deserialize;
-use std::collections::{BTreeMap, HashMap};
+use crate::{BTreeMap, Vec};
 
 use crate::{AccountInfo, Env, SpecName, Test, TransactionParts};
 use revm::primitives::{Address, Bytes};
@@ -14,7 +14,7 @@ pub struct TestUnit {
     pub info: Option<serde_json::Value>,
 
     pub env: Env,
-    pub pre: HashMap<Address, AccountInfo>,
+    pub pre: BTreeMap<Address, AccountInfo>,
     pub post: BTreeMap<SpecName, Vec<Test>>,
     pub transaction: TransactionParts,
     #[serde(default)]

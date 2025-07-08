@@ -5,6 +5,7 @@ use revm::{
     primitives::{Address, Bytes, B256, U256},
 };
 use serde::{Deserialize, Serialize};
+use crate::Vec;
 
 /// Transaction parts.
 #[derive(Debug, Default, PartialEq, Eq, Serialize, Deserialize)]

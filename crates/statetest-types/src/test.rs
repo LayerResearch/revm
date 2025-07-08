@@ -1,5 +1,6 @@
 use revm::primitives::{Address, Bytes, HashMap, B256};
 use serde::Deserialize;
+use crate::String;
 
 use crate::{transaction::TxPartIndices, AccountInfo};
 
